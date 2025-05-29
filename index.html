@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>I love you forever my wife</title>
+
+<style type="text/css">
+@font-face {
+    font-family: digit;
+    src: url('digital-7_mono.ttf') format("truetype");
+}
+
+/* Add styles for the music icon */
+#musicControl {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+#musicControl i {
+    font-size: 24px;
+    color: #ff0000; /* Red to match the romantic theme, adjustable */
+    cursor: pointer;
+}
+
+#musicControl i:hover {
+    color: #ff6666; /* Lighter red on hover */
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+    <div id="content">
+        <div id="code">
+            <span class="comments">/**</span><br />
+            <span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
+            <span class="space"/><span class="comments">*/</span><br />
+            Hey my wife ❤️<br />
+            Do you remember the day we first met?<br />
+            <span class="comments">// The 30th Jan, 2024 Tuesday </span><br />
+            Since that day a spark begun;<br />
+            <span class="comments">// i fallen for your words and your first picture and eyes</span><br />
+            Your everything got imprinted in my heart;<br />
+            As the time went on;<br />
+            The Bond grew stronger and stronger;<br /> 
+            from friendship to relationship
+            Journey from Infatuation to Love; and wonderful<br />
+            We have traveled a long way together; and alot<br />
+            There have been fights ;<br />
+            <span class="comments">// but we always fix them together, we made for eachother ❤️</span><br />
+            and you always stays with me whenever i want you<br />
+            you are just mine, only mine, mine forever<br /> 
+            <br>
+            <br>
+            And happy valentine's day my wife<br />
+            Baby, I will love you forever;<br />
+            we will be married very soon, INSHAALLAH INSHAALLAH INSHAALLAH 
+            <br>
+            <br>
+            Let me hug you 😘, click the heart below<br />
+            <br>
+            <span id="heartspan">
+            <a href="gif.mp4"><i class="fas fa-heart" id="icon"></i></a>
+            </span>
+        </div>
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                    𝑨𝒒𝒔𝒂 my wife
+                    <div id="elapseClock"></div>
+                </div>
+                <div id="loveu">
+                    I LOVE YOU FOREVER<br/>
+                    <div class="signature">- walt</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add audio element and music control -->
+<div id="musicControl">
+    <i class="fas fa-music" id="musicIcon"></i>
+</div>
+<audio id="backgroundMusic" src="music.mp3"></audio>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2024, 8, 18);
+together.setHours(21);
+together.setMinutes(32);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+// Add music toggle functionality
+var music = document.getElementById("backgroundMusic");
+var musicIcon = document.getElementById("musicIcon");
+musicIcon.addEventListener("click", function() {
+    if (music.paused) {
+        music.play();
+        musicIcon.classList.add("fa-spin"); // Optional: add spin animation when playing
+    } else {
+        music.pause();
+        musicIcon.classList.remove("fa-spin");
+    }
+});
+
+if (!document.createElement('canvas').getContext) {
+    var msg = document.createElement("div");
+    msg.id = "errorMsg";
+    msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+    document.body.appendChild(msg);
+    $("#code").css("display", "none");
+    $("#copyright").css("position", "absolute");
+    $("#copyright").css("bottom", "10px");
+    document.execCommand("stop");
+} else {
+    setTimeout(function () {
+        startHeartAnimation();
+    }, 5000);
+
+    timeElapse(together);
+    setInterval(function () {
+        timeElapse(together);
+    }, 500);
+
+    adjustCodePosition();
+    $("#code").typewriter();
+}
+</script>
+</body>
+</html>
