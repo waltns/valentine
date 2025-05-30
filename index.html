@@ -28,6 +28,23 @@
 #musicControl i:hover {
     color: #ff6666; /* Lighter red on hover */
 }
+
+/* Add styles for the apology box */
+#apologyBox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
 </style>
 <link href="css/default.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -93,6 +110,13 @@
     <i class="fas fa-music" id="musicIcon"></i>
 </div>
 <audio id="backgroundMusic" src="music.mp3"></audio>
+
+<!-- Add apology box -->
+<div id="apologyBox">
+    𝐼 𝑎𝑚 𝑠𝑜𝑟𝑟𝑦 𝑚𝑦 𝑤𝑖𝑓𝑒, 𝑖 𝑙𝑜𝑣𝑒 𝑦𝑜𝑢 𝑎𝑙𝑜𝑡 
+    𝑖 𝑟𝑒𝑎𝑙𝑙𝑦 ℎ𝑢𝑟𝑡 𝑦𝑜𝑢, 𝑖 𝑤𝑖𝑠ℎ 𝑦𝑜𝑢𝑟 ℎ𝑎𝑝𝑝𝑖𝑛𝑒𝑠𝑠 𝑏𝑒𝑔𝑖𝑛𝑠 𝑛𝑒𝑥𝑡 𝑡𝑜 𝑖 𝑒𝑛𝑑.
+    𝑖 𝑙𝑜𝑣𝑒 𝑦𝑜𝑢 𝑓𝑜𝑟𝑒𝑣𝑒𝑟 𝑚𝑦 𝑤𝑖𝑓𝑒
+</div>
 
 <script type="text/javascript">
 var offsetX = $("#loveHeart").width() / 2;
